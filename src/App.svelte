@@ -98,7 +98,8 @@
 
   <textarea bind:value={input} placeholder={placeholders[from]}></textarea>
   <div></div>
-  <textarea value={output} readonly></textarea>
+  <textarea onfocus={(e) => e.currentTarget.select()} value={output} readonly
+  ></textarea>
 </div>
 
 <style>
